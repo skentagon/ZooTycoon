@@ -8,13 +8,9 @@
 class SeaLion : public Animal {
   public:
     SeaLion()
-      : Animal("Sea Lion",cnt) {
+      : Animal("Sea Lion",800,1,1,120) {
         ++cnt;
       };
-    static const int cost = 800;
-    static const int babyNum = 1;
-    static const int foodCost = 1;
-    static const int revenue = 120;
     static const bool isSeaLion = true;
     static int cnt;
   private:

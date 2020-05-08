@@ -1,8 +1,8 @@
 exe_file = zoo.out
 CC = g++ -std=c++11 
 
-$(exe_file): main.o game.o age.o zoo.o util.o animal.o
-		$(CC) -o $(exe_file) main.o game.o age.o zoo.o util.o animal.o
+$(exe_file): main.o game.o age.o zoo.o util.o animal.o tiger.o
+		$(CC) -o $(exe_file) main.o game.o age.o zoo.o util.o animal.o tiger.o
 
 main.o:	main.cpp
 		$(CC) -c main.cpp
@@ -21,6 +21,9 @@ util.o:	util.cpp util.hpp
 
 animal.o:	animal.cpp animal.hpp
 		$(CC) -c animal.cpp
+
+tiger.o:	tiger.cpp tiger.hpp
+		$(CC) -c tiger.cpp
 
 clean:
 		rm -f *.out *.o $(exe_file)

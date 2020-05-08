@@ -10,18 +10,21 @@
 class Animal {
   public:
     Animal() = default;
-    Animal( const std::string& s, int dx )
-      : name( s + util::getUniqueString(dx) ) {}
-    void grow(){ ++age; };
+    Animal( const std::string& s, int cost, int babyNum, int foodCost, int revenue )
+      : name( s ),
+      cost(cost),
+      babyNum(babyNum),
+      foodCost(foodCost),
+      revenue(revenue) {}
+    void grow();
     void printName() const;
     void printAge() const;
     int getMedicalCost();
-    const int cost = 0;
-    static const int babyNum;
-    static const int foodCost;
-    static const int revenue;
-    static const int medialcCost;
-    static const bool isSeaLion = false;
+    const int cost;
+    const int babyNum;
+    const int foodCost;
+    const int revenue;
+    const bool isSeaLion = false;
   private:
     Age age;
     const std::string name;
