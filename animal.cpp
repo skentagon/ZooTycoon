@@ -48,7 +48,7 @@ void Animal::printName() const {
 
 void Animal::printAge() const {
   printName();
-  std::cout << "\t:\t";
+  std::cout << " : ";
   age.print();
   std::cout << std::endl;
 }

@@ -159,7 +159,10 @@ void Game::buyAnimals(){
 }
 
 void Game::payCost(){
-  std::cout << "Witch food type do you want to feed?\n1: Regular\n2: Premium\n3: Cheap" << std::endl;
+  std::cout << "========================================\n"
+    << "bank balance : " << bank
+    << "\nbase food cost : " << feedCost
+    << "\nWitch food type do you want to feed?\n1: Regular\n2: Premium\n3: Cheap" << std::endl;
   int input;
   std::cin >> input;
   if ( input <= 0 || 4 <= input ){
@@ -188,6 +191,7 @@ void Game::payCost(){
 }
 
 void Game::calcFeedCost(){
-  int diff = 80 + rand()&41;
+  int diff = 80 + rand()%41;
+  std::cout << "hoge" << diff << std::endl;
   feedCost = feedCost * diff / 100;
 }

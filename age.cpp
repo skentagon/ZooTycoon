@@ -12,17 +12,17 @@ void Age::setAge( int p ){
   age = p;
 }
 
-const Age Age::operator++(int){
+const Age Age::operator++(){
   ++age;
   return *this;
 }
 
-const Age Age::operator++(){
+const Age Age::operator++(int){
   const Age tmp = *this;
   ++(*this);
   return tmp;
 }
 
 void Age::print() const {
-  std::cout << age;
+  std::cout << age << " months old";
 }
