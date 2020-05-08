@@ -9,7 +9,7 @@ class Age {
       adolesence,
       adult,
     };
-    generation getGeneration();
+    generation getGeneration() const;
     const Age operator++(int);
     const Age operator++();
     void print() const;

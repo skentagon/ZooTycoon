@@ -7,16 +7,7 @@
 
 class SeaLion : public Animal {
   public:
-    SeaLion()
-      : Animal("Sea Lion",800,1,1,120) {
-        ++cnt;
-      };
-    bool isSeaLion = true;
-    static int cnt;
-  private:
-    Age age;
-    //std::string name;
-
+    SeaLion();
 };
 
 #endif

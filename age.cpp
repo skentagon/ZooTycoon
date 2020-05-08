@@ -2,7 +2,7 @@
 #include <iostream>
 #include "age.hpp"
 
-Age::generation Age::getGeneration(){
+Age::generation Age::getGeneration() const {
   if ( age < 6 ) return generation::baby;
   if ( age < 48 ) return generation::adolesence;
   return adult;

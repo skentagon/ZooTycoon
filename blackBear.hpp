@@ -7,8 +7,7 @@
 
 class BlackBear : public Animal {
   public:
-    BlackBear() : Animal("Black Bear",6000,2,3,600) {};
-
+    BlackBear();
 };
 
 #endif

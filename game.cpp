@@ -53,7 +53,7 @@ void Game::events(){
   } else if ( tmp == 2 ) {
     // boom
     for( int i=0; i<zoo.getAminalNum(); ++i ){
-      if ( zoo.getAnimal(i)->isSeaLion ){
+      if ( zoo.getAnimal(i)->isSeaLion() ){
         zoo.getAnimal(i)->printName();
         int bonus = 150 + rand()%251;
         std::cout << " gets extra bonus! [" << bonus << "$]"<< std::endl;
