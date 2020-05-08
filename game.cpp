@@ -28,20 +28,26 @@ void Game::events(){
 
   switch( rand()%4 ){
     case 0: // sick
-      int sick = rand()%zoo.getAminalNum();
+      {
+        int sick = rand()%zoo.getAminalNum();
+      }
       break;
 
     case 1: //baby
+      break;
 
     case 2: //boom
-      for( int i=0; i<zoo.getAminalNum(); ++i ){
-        if ( zoo.getAnimal(i)->isSeaLion ){}
+      {
+        for( int i=0; i<zoo.getAminalNum(); ++i ){
+          if ( zoo.getAnimal(i)->isSeaLion ){}
+        }
       }
       break;
 
     default: //nothing
+      break;
 
-  }
+  };
 
 }
 

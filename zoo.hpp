@@ -6,13 +6,13 @@
 
 class Zoo {
   public:
+    ~Zoo();
     void grow();
     Animal* getAnimal( unsigned int i ) { return &animals[i]; }
     unsigned int getAminalNum() const { return animalNum; }
   private:
     Animal* animals = nullptr;
     unsigned int animalNum = 0;
-    unsigned int animalBufferSize = 0;
 };
 
 #endif
