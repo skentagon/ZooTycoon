@@ -12,8 +12,17 @@ void Animal::grow(){
   ++age;
 }
 
-void Animal::printName() const { std::cout << name << std::endl; }
+void Animal::printName() const {
+  std::cout << name;
+}
 
 void Animal::printAge() const {
   printName();
+  std::cout << "\t:\t";
+  age.print();
+  std::cout << std::endl;
+}
+
+Age::generation Animal::getGeneration() {
+  return age.getGeneration();
 }

@@ -11,7 +11,7 @@ class SeaLion : public Animal {
       : Animal("Sea Lion",800,1,1,120) {
         ++cnt;
       };
-    static const bool isSeaLion = true;
+    bool isSeaLion = true;
     static int cnt;
   private:
     Age age;

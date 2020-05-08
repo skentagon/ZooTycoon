@@ -16,18 +16,20 @@ class Animal {
       babyNum(babyNum),
       foodCost(foodCost),
       revenue(revenue) {}
+    //Animal& operator=(const Animal&) = default;
     void grow();
     void printName() const;
     void printAge() const;
+    Age::generation getGeneration();
     int getMedicalCost();
-    const int cost;
-    const int babyNum;
-    const int foodCost;
-    const int revenue;
-    const bool isSeaLion = false;
+    int cost;
+    int babyNum;
+    int foodCost;
+    int revenue;
+    bool isSeaLion = false;
   private:
     Age age;
-    const std::string name;
+    std::string name;
 
 };
 
