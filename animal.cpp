@@ -1,13 +1,13 @@
 
 #include "animal.hpp"
 
-Animal::Animal( const std::string& s, int cost, int babyNum, int foodCost, int revenue, bool isSeaLion_ )
+Animal::Animal( const std::string& s, int cost, int babyNum, int foodCost, int revenue, int type )
   : name( s ),
   cost(cost),
   babyNum(babyNum),
   foodCost(foodCost),
   revenue(revenue),
-  isSeaLion_(isSeaLion_) {}
+  type(type) {}
 
 int Animal::getCost() const {
   return cost;
@@ -21,8 +21,14 @@ int Animal::getFoodCost() const {
 int Animal::getRevenue() const {
   return revenue;
 }
+bool Animal::isBlackBear() const {
+  return type == 0;
+}
 bool Animal::isSeaLion() const{
-  return isSeaLion_;
+  return type == 1;
+}
+bool Animal::isTiger() const{ 
+  return type == 2;
 }
 
 int Animal::getMedicalCost(){
@@ -30,6 +36,10 @@ int Animal::getMedicalCost(){
     return cost;
   }
   return cost/2;
+}
+
+void Animal::setAge( int p ){
+  age.setAge(p);
 }
 
 void Animal::printName() const {

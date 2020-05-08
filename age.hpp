@@ -10,6 +10,7 @@ class Age {
       adult,
     };
     generation getGeneration() const;
+    void setAge( int p );
     const Age operator++(int);
     const Age operator++();
     void print() const;

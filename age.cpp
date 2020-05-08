@@ -8,6 +8,10 @@ Age::generation Age::getGeneration() const {
   return adult;
 }
 
+void Age::setAge( int p ){
+  age = p;
+}
+
 const Age Age::operator++(int){
   ++age;
   return *this;

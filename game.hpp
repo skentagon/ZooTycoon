@@ -9,6 +9,7 @@ class Game {
     Game();
     void execute();
     bool shouldExit() const { return sw_exit; }
+    void calcFeedCost();
   private:
     void events();
     void getRevenue();
@@ -17,6 +18,8 @@ class Game {
     Zoo zoo;
     bool sw_exit = false;
     long long bank = 100000;
+    long long feedCost = 80;
+    int sickRate = 4;
 };
 
 #endif
