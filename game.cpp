@@ -64,6 +64,14 @@ void Game::events(){
 
 }
 
-void Game::getRevenue(){}
-void Game::buyAnimals(){}
-void Game::payCost(){}
+void Game::getRevenue(){
+  //
+}
+
+void Game::buyAnimals(){
+  //
+}
+
+void Game::payCost(){
+  //
+}
